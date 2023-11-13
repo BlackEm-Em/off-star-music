@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="starm.Views.RegistrationPage">
+
+    <Grid>
+        <!-- Фоновое изображение растянутое на весь экран -->
+        <Image Source="backph.jpg" Aspect="AspectFill" />
+
+        <Grid VerticalOptions="CenterAndExpand">
+            <!-- Текст "Off star inc" в верхней части экрана -->
+            <Label Text="Off star inc" TextColor="White" FontSize="24" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,-250,0,0" />
+
+            <!-- Текст "Вход" по центру экрана -->
+            <Label Text="Регистрация" TextColor="White" FontSize="30" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="0,-250,0,0" />
+
+            <!-- Форма для ввода логина и пароля -->
+            <StackLayout>
+                <Entry Placeholder="введите логин" PlaceholderColor="White" TextColor="White" HorizontalOptions="FillAndExpand" />
+                <Entry Placeholder="Введите пароль" PlaceholderColor="White" IsPassword="True" TextColor="White" HorizontalOptions="FillAndExpand" />
+                <Entry Placeholder="Введите пароль еще раз" PlaceholderColor="White" IsPassword="True" TextColor="White" HorizontalOptions="FillAndExpand" />
+                <!-- Добавьте другие элементы интерфейса, если необходимо -->
+              
+                <Button Text="Зарегистрироваться"  BackgroundColor="White" TextColor="Black" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
